@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F59E0B;
+    padding: 8px;
+}
+
+header img{
+    width: 80px;
+    border-radius: 69px 91px 88px 99px;
+}
+
+.redes_sociales, .email, .tel, .instalar{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.email p, .tel p{
+    color: #212121;
+    font-weight: bold;
+}
+
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.botones >button{
+    background-color: #2b405c;
+    width: 10rem;
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
