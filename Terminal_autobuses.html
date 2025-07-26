@@ -6,94 +6,244 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terminal de autobuses - LooneyRide</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
 
 <body>
   <header>
     <!--logo-->
-    <img src="/img/logo1.png" alt="">
+    <div class="logo">
+      <img src="/img/logo.jpg" alt="">
+      <h1>Delfínes</h1>
+    </div>
 
-    <!--instalar-->
-    <div class="instalar">
-      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="lucide lucide-arrow-big-down-dash-icon lucide-arrow-big-down-dash">
-        <path d="M15 5H9" />
-        <path d="M15 9v3h4l-7 7-7-7h4V9z" />
+    <!--redes sociales-->
+    <div class="redes">
+      <svg class="logo-social" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+        fill="none">
+        <defs>
+          <linearGradient id="instaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#feda75" />
+            <stop offset="25%" stop-color="#fa7e1e" />
+            <stop offset="50%" stop-color="#d62976" />
+            <stop offset="75%" stop-color="#962fbf" />
+            <stop offset="100%" stop-color="#4f5bd5" />
+          </linearGradient>
+        </defs>
+        <!-- Fondo circular con degradado -->
+        <circle cx="12" cy="12" r="12" fill="url(#instaGradient)" />
+        <!-- Ícono más pequeño, con lente centrado -->
+        <g transform="translate(5, 5)" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Marco de la cámara -->
+          <rect width="14" height="14" x="0" y="0" rx="3.5" ry="3.5" fill="none" />
+          <!-- Lente centrado (ajustado) -->
+          <circle cx="7" cy="7" r="3" fill="none" />
+          <!-- Punto en la esquina superior derecha -->
+          <line x1="10.8" x2="10.81" y1="3.2" y2="3.2" />
+        </g>
       </svg>
-      <p>Instalar app</p>
+
+      <svg class="logo-social" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+        fill="none">
+        <!-- Fondo circular azul Facebook -->
+        <circle cx="12" cy="12" r="12" fill="#1877F2" />
+        <!-- Ícono blanco de Facebook -->
+        <path transform="translate(5, 4.5)" fill="white"
+          d="M6 14V8.5H4V6h1.75V4.5c0-1.33.84-3 3-3h2V4h-1.5c-.42 0-.75.33-.75.75V6H11l-.25 2.5H9.5V14h-3.75z" />
+      </svg>
+
+      <svg class="logo-social" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"
+        fill="none">
+        <!-- Fondo circular azul Twitter -->
+        <circle cx="12" cy="12" r="12" fill="#1DA1F2" />
+        <!-- Pajarito más pequeño y centrado -->
+        <g transform="scale(0.7) translate(6, 6)">
+          <path fill="white"
+            d="M19.633 7.997c.013.18.013.361.013.541 0 5.508-4.194 11.857-11.857 11.857A11.786 11.786 0 0 1 2 18.29c.306.036.601.049.919.049a8.338 8.338 0 0 0 5.163-1.781 4.157 4.157 0 0 1-3.879-2.88c.25.036.498.06.761.06.361 0 .722-.049 1.059-.138a4.148 4.148 0 0 1-3.328-4.07v-.05c.556.306 1.2.49 1.882.514a4.142 4.142 0 0 1-1.847-3.452c0-.763.206-1.46.566-2.07a11.78 11.78 0 0 0 8.546 4.337 4.679 4.679 0 0 1-.102-.95 4.15 4.15 0 0 1 7.184-2.835 8.173 8.173 0 0 0 2.63-1.006 4.13 4.13 0 0 1-1.822 2.289 8.286 8.286 0 0 0 2.387-.637 9.034 9.034 0 0 1-2.084 2.17z" />
+        </g>
+      </svg>
     </div>
 
     <!--contacto-->
-    <!--correo-->
-    <div class="email">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="lucide lucide-mail-icon lucide-mail">
-        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-        <rect x="2" y="4" width="20" height="16" rx="2" />
-      </svg>
-      <p>Buszy_mx@buses.terrestres.com</p>
+    <div class="contacto">
+      <!--correo-->
+      <div class="email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 32 32" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Borde circular más grande y separado -->
+          <circle cx="16" cy="16" r="15" fill="#333" stroke="#333" stroke-width="2" />
+
+          <!-- Ícono de mail más pequeño y centrado -->
+          <g transform="translate(5,5) scale(0.9)" stroke="#F39C12" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" fill="none">
+            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+          </g>
+        </svg>
+        <p>Buszy_mx@buses.terrestres.com</p>
+      </div>
+
+      <!--telefono-->
+      <div class="tel">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 32 32" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Borde circular -->
+          <circle cx="16" cy="16" r="15" fill="#333" stroke="#333" stroke-width="2" />
+          <!-- Ícono de teléfono más pequeño y centrado -->
+          <g transform="translate(6,6) scale(0.85)" stroke="#F39C12" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" fill="none">
+            <path
+              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+          </g>
+        </svg>
+        <p>9178530047 ó 7725413820</p>
+      </div>
     </div>
-
-    <!--telefono-->
-    <div class="tel">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="lucide lucide-phone-icon lucide-phone">
-        <path
-          d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
-      </svg>
-      <p>
-        917 853 00 47 <br>
-        772 541 3820
-      </p>
-    </div>
-
-
 
     <!--botones-->
     <div class="botones">
       <button type="button">Empleado</button>
-
       <button type="button">Cliente</button>
     </div>
   </header>
 
   <main>
-    <!---->
+    <!--bloque1-->
+    <section class="bloque1"></section>
 
+    <section class="bloque2">
+      <h3>Principales boletos de autobus</h3> <br>
+
+      <div class="encabezado">
+        <p>Rutas</p>
+        <p>A partir de</p>
+      </div>
+
+      <div class="rutas">
+        <div class="rutas-text">
+          <p>Ciudad de México a Taxco </p>
+          <p>Ciudad de México a Ixtapa</p>
+          <p>Ciudad de México a Cuernavaca</p>
+          <p>Ciudad de México a Tecpan de Galeana </p>
+          <p>Acapulco a Ciudad de México</p>
+        </div>
+
+        <div class="precio-ruta">
+          <p>$225.00 MXN </p>
+          <p>$790.00 MXN</p>
+          <p> $130.00 MXN</p>
+          <p>$640.00 MXN</p>
+          <p>$380.00 MXN</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque3">
+      <h4>Terminales Delfínes</h4>
+
+      <div class="terminal-mapa">
+
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps?q=Av.+V%C3%ADa+Gustavo+Baz+Prada+%232218,+Tlalnepantla,+Edo.+de+M%C3%A9xico&output=embed"
+            allowfullscreen>
+          </iframe>
+          <div class="direccion">
+            Av. Vía Gustavo Baz Prada #2218,<br>
+            Col. Tlalnepantla, Municipio de Tlalnepantla,<br>
+            Edo. de México.
+          </div>
+        </div>
+
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps?q=Avenida+Cuauht%C3%A9moc+1490,+Acapulco+de+Ju%C3%A1rez,+Guerrero,+Mexico&output=embed"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="direccion">
+            Av Cuauhtémoc 1490, <br>
+            Fracc. Magallanes, Marroquin, 39670 <br>
+            Acapulco de Juárez, Gro.
+          </div>
+        </div>
+
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps?q=Calzada+Taxque%C3%B1a+1320,+Campestre+Coyoac%C3%A1n,+Coyoac%C3%A1n,+Ciudad+de+M%C3%A9xico,+04200&output=embed"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="direccion">
+            Calzada Taxqueña No. 1320,<br>
+            Col. Campestre Churubusco,<br>
+            Delegación Coyoacán, C.P. 04200,<br>
+            Ciudad de México, CDMX
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
   </main>
 
   <footer>
+    <section>
+      <div class="left-side">
+        <div class="imagen">
+          <img src="/img/cel.png" alt="bievenido">
+        </div>
 
-    <!--redes sociales-->
-    <div class="redes_sociales">
-      <!--insta-->
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="lucide lucide-instagram-icon lucide-instagram">
-        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-      </svg>
+        <div>
+          <p class="main-texto">Descarga la App </p>
+          <p class="sub-texto"><strong>¡Disfrutar de beneficios exclusivas!</strong><br>
+            Recibe notificaciones en tiempo real <br>
+            y accede a <strong>promociones exclusivas</strong></p>
 
-      <!--facebook-->
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="lucide lucide-facebook-icon lucide-facebook">
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-      </svg>
+          <div class="play-apple">
+            <img src="/img/descarga1.png" alt="descarga Google Play">
+            <img src="/img/descarga2.webp" alt="descarga App Store">
+          </div>
+        </div>
+      </div>
 
-      <!--twitter-->
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-        class="lucide lucide-twitter-icon lucide-twitter">
-        <path
-          d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-      </svg>
+      <div class="right-side">
+        <div class="otros">
+          <p>Otros servicios</p>
+          <ul>
+            <li>Paquetería</li>
+            <li>Transporte de personal</li>
+            <li>Servicios especiales</li>
+            <li>Imprime tu boleto</li>
+            <li>Programa de Asistencia</li>
+            <li>Empleo</li>
+            <li>Facturación</li>
+            <li>Cambia tu boleto</li>
+            <li>Regenerando caminos</li>
+          </ul>
+        </div>
+
+        <div class="legales">
+          <p>Legales</p>
+          <ul>
+            <li>Políticas de compra</li>
+            <li>Términos y condiciones</li>
+            <li>Legales</li>
+            <li>Mercados Blindados</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="aviso-cookies">
+      <p>
+        Al navegar en este sitio aceptas las cookies que utilizamos para mejorar tu experiencia
+        <a href="#">Términos y condiciones</a> |
+        <a href="#">Aviso de privacidad</a>
+      </p>
+      <button class="btn-aceptar">Aceptar</button>
     </div>
-
-
   </footer>
 </body>
 

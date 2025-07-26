@@ -1,43 +1,312 @@
-header{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #F59E0B;
-    padding: 8px;
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
-header img{
-    width: 80px;
-    border-radius: 69px 91px 88px 99px;
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F39C12;
+    font-family: 'Poppins', sans-serif
 }
 
-.redes_sociales, .email, .tel, .instalar{
+main{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header h1{
+    font-size: 3rem;
+}
+.logo{
     display: flex;
-    gap: 1rem;
     align-items: center;
+    gap: 2.5rem;
+    color: white;
+    font-style: italic;
+    font-family: "Gabriela", serif;
 }
 
-.email p, .tel p{
-    color: #212121;
-    font-weight: bold;
+.logo>img{
+    border-radius: 5rem;
+    width: 6rem;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo-social:hover{
+        animation: sacudir 0.7s ease-in-out;
+        cursor: pointer;
 }
 
 
-.botones{
+@keyframes sacudir {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-15deg);}
+    40% {transform: rotate(10deg);}
+    60% {transform: rotate(-10deg);}
+    80% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 550;
+    gap: 0.1rem;
+}
+
+.email,.tel{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    letter-spacing: 0.01rem;
+    font-size: 0.9rem;
+}
+
+.botones {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
 }
-.botones >button{
-    background-color: #2b405c;
+
+.botones>button {
+    background-color: #0E6655;
     width: 10rem;
     padding: 0.5rem;
     color: white;
-    font-weight: bold;
     outline: none;
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    box-shadow: 2px 2px 3px #0E6655;
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.1);
+    }
 }
 
+/*********************  M  A  I  N  ************************/
+
+/*fondos imagenes bloque1,2,3*/
+.bloque1 {
+    background-image: url(/img/portada.jpg);
+    width:98vw;
+    height: 50vh;
+}
+.bloque2 {
+    background-image: url(/img/portada2.jpg);
+    background-position: center bottom;
+    width: 91.8vw;
+    height: 70vh;
+    padding: 3rem;
+}
+.bloque3 {
+    background-color: #F39C12;
+    width: 96vw;
+    height: 60vh;
+    padding: 1rem;
+}
+
+.bloque1, .bloque2{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/********************bloque 1******************/
+
+
+/****************bloque 2***************/
+.bloque2 h3{
+    text-align: center;
+    font-size:2rem;
+    margin: 0 10rem;
+    color: white;
+    width: 80%;
+    padding: 0.8rem;
+    text-shadow: 10px 5px 5px #333;
+}
+
+.encabezado{
+    display: flex;
+    margin: 0 14rem;
+    gap: 45rem;
+    color:white;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    width: 70%;
+    height: 12%;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+    box-shadow: 10px 0 5px rgba(0,0,0,0.4), -10px 0 5px rgba(0,0,0,0.4);
+    border-radius: 1rem 1rem 0 0;
+
+}
+
+.rutas{
+    display: flex;
+}
+
+.rutas-text{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    width: 56%;
+    color: white;
+    margin-left: 14rem;
+    padding: 1rem;
+    box-shadow: 0 10px 5px rgba(0,0,0,0.4), -10px 0 5px rgba(0,0,0,0.4);
+    border-radius: 0 0 0 1rem;
+
+}
+
+.precio-ruta{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+    width: 9.8%;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0 0 1rem 0;
+}
+
+/********************** b l o q u e 3 **********************/
+/*titulo*/
+.bloque3 h4{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+/*iframe - mapas*/
+.terminal-mapa{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.mapa {
+    background-color: white;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+}
+.mapa iframe {
+    width: 300px;
+    height: 200px;
+    border: none;
+}
+.direccion {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+
+/************************* f o o t e r ***********************/
+footer{
+    background-color: #0E6655;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer>section{
+    display: flex;
+    gap: 10rem;
+}
+
+.left-side, .right-side{
+    display: flex;
+}
+/**************** i z q u i e r d a ***************/
+.imagen{
+    margin-top: 6rem;
+}
+.main-texto{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+.sub-texto{
+    color: white;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+.play-apple img{
+    display: block;
+    width: 10rem;
+    margin-bottom: 0.5rem;
+}
+
+/****************** d e r e c h a *********************/
+.otros, .legales{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 4rem;
+}
+
+.otros li, .legales li{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/****************** c o o k i e s******************/
+.aviso-cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 92%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    font-size: 0.8rem;
+    margin: 1rem 3rem;
+    border-radius: 0.5rem;
+}
+
+.aviso-cookies a {
+    color: #fff;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+.btn-aceptar {
+    background-color: #9C27B0;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-aceptar:hover {
+    background-color: #8e24aa;
+}
