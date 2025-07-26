@@ -14,7 +14,6 @@ main{
     font-family: 'Poppins', sans-serif;
 }
 
-
 header h1{
     font-size: 3rem;
 }
@@ -42,7 +41,6 @@ header h1{
         animation: sacudir 0.7s ease-in-out;
         cursor: pointer;
 }
-
 
 @keyframes sacudir {
     0% {transform: rotate(0deg);}
@@ -77,16 +75,20 @@ header h1{
     gap: 1rem;
 }
 
+.botones a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
 .botones>button {
     background-color: #0E6655;
     width: 10rem;
     padding: 0.5rem;
-    color: white;
     outline: none;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     box-shadow: 2px 2px 3px #0E6655;
 
@@ -97,7 +99,6 @@ header h1{
 }
 
 /*********************  M  A  I  N  ************************/
-
 /*fondos imagenes bloque1,2,3*/
 .bloque1 {
     background-image: url(/img/portada.jpg);
@@ -117,14 +118,10 @@ header h1{
     height: 60vh;
     padding: 1rem;
 }
-
 .bloque1, .bloque2{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-/********************bloque 1******************/
-
 
 /****************bloque 2***************/
 .bloque2 h3{
@@ -241,25 +238,25 @@ footer>section{
     margin-top: 6rem;
 }
 .main-texto{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     font-weight: 600;
 }
 .sub-texto{
     color: white;
     line-height: 2rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-style: italic;
 }
 .play-apple img{
     display: block;
-    width: 10rem;
+    width: 8rem;
     margin-bottom: 0.5rem;
 }
 
 /****************** d e r e c h a *********************/
 .otros, .legales{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     font-weight: 600;
     text-align: center;
@@ -268,7 +265,7 @@ footer>section{
 
 .otros li, .legales li{
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     font-style: italic;
 }

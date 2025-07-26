@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 6rem 1fr auto;
+    grid-template-areas:
+        "header"
+        "main";
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F39C12;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/********************************/
+
+
+
+.main {
+    grid-area: main;
+    padding: 2rem;
+    /*background-color: #FDFEFE;*/
+    background-color: aquamarine;
+    display: inline;
+}
+
+.formulario-registro {
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flexbox;
+}
+
+.formulario-registro legend {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 40%;
+    text-align: center;
+}
+
+.otros img {
+    width: 4rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px 1px lightgray, -3px 0 5px 1px lightgray;
+    background-color: white;
+}
+
+.otros {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    width: 40%;
+    margin: 1.5rem 0;
+}
+
+.left fieldset {
+    border: none;
+    outline: none;
+    width: 40%;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+}
+
+.campos label {
+    font-size: 1rem;
+    color: #212121;
+    margin: 0.8rem 0;
+}
+
+/*icono derechos-input*/
+.icono-input {
+    position: relative;
+    width: 100%;
+}
+
+.icono-input input {
+    width: 35rem;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 3rem;
+    border: 0.01rem solid rgb(207, 245, 193);
+    border-radius: 0.5rem;
+    background-color: rgb(207, 245, 193);
+    margin-top: 1rem;
+
+    &:hover {
+        border: none;
+        outline: none;
+    }
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+
+    &::placeholder {
+        color: #333;
+    }
+}
+
+.icono-izquierda,
+.icono-derecha {
+    position: absolute;
+    top: 45%;
+    pointer-events: none;
+    color: gray;
+}
+
+.icono-izquierda {
+    left: 1rem;
+}
+
+.icono-derecha {
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+.no-contra {
+    width: 40%;
+    margin: 0.3rem 0 2rem 25rem;
+    cursor: pointer;
+    color: #212121;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.formulario-registro button {
+    background-color: #0E6655;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    width: 15%;
+    border: 0.1rem solid #0E6655;
+    color: #fcfcf7;
+    cursor: pointer;
+    margin: 0 0 1rem 11rem;
+
+    &:hover {
+        transition: transform 0.5s ease-in-out;
+        transform: scale(1.1);
+        background-color: #075243;
+    }
+}
+
+.right-side{
+    background-color: #0E6655;
+
+}
