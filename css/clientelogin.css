@@ -115,7 +115,6 @@ body {
     padding: 2rem;
     justify-items: center;
     z-index: 1;
-    /* contenido quede encima del img*/
 }
 
 .main::before {
@@ -131,7 +130,6 @@ body {
     background-size: cover;
     filter: blur(0.06rem);
     z-index: -1;
-    /* Coloca el fondo detrás del contenido */
 }
 
 
@@ -150,8 +148,10 @@ body {
 .formulario-registro legend {
     font-size: 3rem;
     font-weight: bold;
-    width: 80%;
+    width: 100%;
     text-align: center;
+    margin-right: 4rem;
+
 }
 
 .otros img {
@@ -167,8 +167,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 3rem;
-    width: 80%;
-    margin: 2rem 0;
+    width: 100%;
+    margin: 2rem 4rem 2rem 0;
     cursor: pointer;
 }
 
@@ -177,6 +177,7 @@ body {
     outline: none;
     width: 80%;
     align-content: center;
+    margin-right: 4rem;
 }
 
 .campos {
@@ -233,9 +234,10 @@ body {
     left: 1rem;
 }
 
+
 .no-contra {
     width: 32%;
-    margin: 0.5rem 0 2rem 20.5rem;
+    margin: 0.5rem 0 2rem 20rem;
     cursor: pointer;
     color: #212121;
     font-weight: 600;
@@ -270,17 +272,18 @@ body {
     width: 50%;
     justify-items: center;
     padding: 3rem;
-    margin-left: 3rem;
 }
 
 .right-side {
     background-color: #0E6655;
     width: 50%;
     justify-items: center;
-    border-radius: 9rem 2rem 2rem 9rem;
+    border-radius: 2rem 9rem 9rem 2rem;
     align-content: center;
     text-align: center;
     color: white;
+    margin-right: 2rem;
+
 }
 
 .right-side h2 {
