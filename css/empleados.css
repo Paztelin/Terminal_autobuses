@@ -92,6 +92,7 @@
 /*submenu*/
 #main-menu ul li:hover>ul {
     display: block;
+    z-index: 2;
 }
 
 #main-menu ul li ul {
@@ -103,15 +104,16 @@
     display: block;
     color:#095f4e;
     background-color:white;
-    padding: 20px;
-    font-size: 18px;
+    padding: 15px;
+    font-size: 15px;
     border-top: 1px solid #095f4e;
     border-radius: 10px;
 
     /*comportaminto al pasar el cursor por el submenu*/
     &:hover {
-        background-color: white;
+        background-color:#2F3E46;
         border-radius: 10px;
+        color: white;
         
     }
 }
@@ -241,6 +243,7 @@ form {
 /*no contraseña*/
 .forgot-link {
     margin: -15px 0 35px 155px;
+    cursor: pointer;
 
     &:hover {
         text-decoration: underline;
